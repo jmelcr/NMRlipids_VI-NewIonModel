@@ -1,12 +1,10 @@
+; POPC_GMX.top created by acpype (Rev: 0) on Tue Mar 11 09:53:41 2014
 ; Atom types and definitions of Lipid14 
 ; adaped to account for electronic polarization through ECC
 ;  -> ECC-lipids
 ;
 ; Last edit 29-Jan 2018 
 ; by Josef Melcr
-
-; POPC_GMX.top created by acpype (Rev: 0) on Tue Mar 11 09:53:41 2014
-
 
 [ defaults ]
 ; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
@@ -26,6 +24,7 @@
  cA       cA          0.00000  0.00000   A     0.302571   4.57730e-01 ; EVAL 5 0.339967*PARM['sigma_scale_factor.txt:1.0'] /EVAL
  hE       hE          0.00000  0.00000   A     0.219950   6.56888e-02 ; EVAL 5 0.247135*PARM['sigma_scale_factor.txt:1.0'] /EVAL
  hX       hX          0.00000  0.00000   A     0.174438   6.56888e-02 ; EVAL 5 0.195998*PARM['sigma_scale_factor.txt:1.0'] /EVAL
+ hN       hN          0.00000  0.00000   A     0.0935445  6.56888e-02 ; EVAL 5 0.106908*PARM['sigma_scale_factor.txt:1.0'] /EVAL
 ; tweak end
 ; lipid-tail atom types
  cD       cD          0.00000  0.00000   A     3.39967e-01   4.57730e-01 ; 1.91  0.1094
