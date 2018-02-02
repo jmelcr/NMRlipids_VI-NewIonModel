@@ -239,11 +239,14 @@ if __name__ == "__main__":
     print "OP Name     mean    std    err.est.   confidence_interval {:2.0f}% (min, max)".format(alpha_confidence*100.0)
     print "--------------------------------------------------------------------"
     for op in ordPars.values():
-        (op.mean, op.var, op.std) = op.get_avg_std_OP(alpha_confidence=alpha_confidence)
-        op.avg = op.mean[0]
-        op.confidence_int = op.mean[1]
-        op.errest = max(abs(op.confidence_int-op.avg))
-        print "{:10s} {: 2.4f} {: 2.4f} {: 2.4f}   {}".format(op.name, op.avg, op.std[0], op.errest, op.confidence_int)
+        try:
+            (op.mean, op.var, op.std) = op.get_avg_std_OP(alpha_confidence=alpha_confidence)
+            op.avg = op.mean[0]
+            op.confidence_int = op.mean[1]
+            op.errest = max(abs(op.confidence_int-op.avg))
+            print "{:10s} {: 2.4f} {: 2.4f} {: 2.4f}   {}".format(op.name, op.avg, op.std[0], op.errest, op.confidence_int)
+        except:
+            print "{:10s} -- problem calculating statistics ".format(op.name)
     print "--------------------------------------------------------------------"
 
 
