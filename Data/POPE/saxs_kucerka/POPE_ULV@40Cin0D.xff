@@ -12,7 +12,7 @@
 #setRHO_wat X 0.332
 #updateSIM
 ##
-q           |F(q)|      deltaF
+#q           |F(q)|      deltaF
       0.067      0.6136        0.12
       0.068      0.6648        0.12
       0.069      0.7105        0.12
