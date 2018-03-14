@@ -8,5 +8,5 @@ for frame in u.trajectory:
     x.append(frame.dimensions[0])
     y.append(frame.dimensions[1])
 nlip = np.compress(u.residues.resnames == 'POPE', u.residues.resnames).shape[0]
-apl = np.mean(x)*np.mean(y)/(0.5*nlip) *3  # because the conf.gro counts every POPE molecule 3x
+apl = np.mean(x)*np.mean(y)/(0.5*nlip) ## *3  # because the conf.gro counts every POPE molecule 3x
 print "APL = {apl}".format(apl=apl)

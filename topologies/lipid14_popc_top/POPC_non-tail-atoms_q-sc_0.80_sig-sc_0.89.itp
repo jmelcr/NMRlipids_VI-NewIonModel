@@ -1,4 +1,4 @@
-; ECCLipid17: POPC model with correct Cation (e.g. Ca2+) binding and electrometer response
+; ECC-POPC: POPC model with correct Cation (e.g. Ca2+) binding and electrometer response
 ; Based on Lipid14,
 ; non-tail atoms tweaks: Q scaled by 0.80, Sigma scaled by 0.89 
 ; tails left untouched
