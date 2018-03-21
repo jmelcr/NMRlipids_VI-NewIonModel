@@ -97,7 +97,7 @@ MW_tip4pfb    0      0.00000     0.00000     D    0.00000e+00  0.00000e+00 ; Sam
 ;    oC     X     X     cA     2  0.000000e+00  8.033280e+02
 ; parameters from Amber15-FB
  X  oC   cC   oC       4      180.00    43.93200     2    
-; X  cC   cA  X         9       0.0      0.00000     0
+ X  cC   cA  X         9       0.0      0.00000     0
 ; OPLS MacRog parameters
   cA  cA  cC  oC   3   2.28446   0.00000  -2.28446   0.00000   0.00000   0.00000 
   hX  cA  cC  oC   3   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000
