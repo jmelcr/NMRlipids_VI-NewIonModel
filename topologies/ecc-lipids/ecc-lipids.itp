@@ -15,6 +15,7 @@
 ; non-tail atoms - sigma scaled by 0.89:
 ; tweaked values
  oC       oC          0.00000  0.00000   A     0.261657   5.85760e-01 ; EVAL 5 0.293997*PARM['sigma_scale_factor.txt:1.0'] /EVAL
+ oO       oO          0.00000  0.00000   A     0.261657   5.85760e-01 ; EVAL 5 0.293997*PARM['sigma_scale_factor.txt:1.0'] /EVAL
  oS       oS          0.00000  0.00000   A     0.261657   5.02080e-01 ; EVAL 5 0.293997*PARM['sigma_scale_factor.txt:1.0'] /EVAL
  oT       oT          0.00000  0.00000   A     0.261657   5.02080e-01 ; EVAL 5 0.293997*PARM['sigma_scale_factor.txt:1.0'] /EVAL
  oP       oP          0.00000  0.00000   A     0.261657   5.85760e-01 ; EVAL 5 0.293997*PARM['sigma_scale_factor.txt:1.0'] /EVAL
@@ -104,5 +105,8 @@ MW_tip4pfb    0      0.00000     0.00000     D    0.00000e+00  0.00000e+00 ; Sam
   cC  cA  cA  oT   3   2.87441   0.58158   2.09200  -5.54799   0.00000   0.00000
   cC  cA  cA  hE   3  -0.20920  -0.62760   0.00000   0.83680   0.00000   0.00000
   nA  cA  cC  oC   3   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000
-
+; extra dihedrals from MacRog POPS
+  pA  oT  cA  cA   3  -5.62590   2.08175   7.69277   0.01874  -4.16736   0.0     ;
+  pA  oT  cA  hE   3   0.62760   1.88280   0.00000  -2.51040   0.00000   0.00000 ;
+  nA  cA  cA  oT   3   22.054   -21.6956   -9.81734   4.40504   7.47583  -1.83112 ;
 
