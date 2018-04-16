@@ -7,7 +7,7 @@
 ; in accordance with ECC concept as also shown in
 ; https://pubs.acs.org/doi/10.1021/acs.jpcb.7b12510
 ; using the same VdW parameters as therein
-; and scaled all charges of the original lipid17 model by 3/4 (0.75)
+; and scaled all (i.e. ALL) charges of the original lipid17 model by 3/4 (0.75)
 ;
 ; atomic names and ordering modified to coincide with POPS obtained from charmm-gui
 ; http://charmm-gui.org/

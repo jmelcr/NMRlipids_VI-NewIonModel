@@ -1,42 +1,61 @@
+; topology based on lipid17 POPS -- available in AmberTools
+; taken from 
+; https://doi.org/10.5281/zenodo.1134869
+;
+; modified by Josef Melcr, jmelcr@gmail.com
+; Last update: 2018/04/16
+; in accordance with ECC concept as also shown in
+; https://pubs.acs.org/doi/10.1021/acs.jpcb.7b12510
+; (or https://github.com/ohsOllila/NMRlipids_VI-NewIonModel) 
+; using the same VdW parameters as therein
+; and scaled all non-tail charges 
+; (i.e. like was done in that work for POPC, 
+; of the original lipid17 model by 3/4 (0.75)
+;
+; atomic names and ordering modified to coincide with POPS obtained from charmm-gui
+; http://charmm-gui.org/
+; so that this topology is directly usable with the outputs from the tool
+;
+;
 [ moleculetype ]
 ; Name        nrexcl
 POPS  3
 [ atoms ]
 ; nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB
-     1          nA       2   POPS      N     66  -0.361049    14.0100
-     2          hN       2   POPS    HN1     67   0.338888     1.0080
-     3          hN       2   POPS    HN2     68   0.338888     1.0080
-     4          hN       2   POPS    HN3     69   0.338888     1.0080
-     5          cA       2   POPS    C12     64  -0.068750    12.0100
-     6          hX       2   POPS   H12A     65   0.103752     1.0080
-     7          cC       2   POPS    C13     70   0.814010    12.0100
-     8          oO       2   POPS   O13A     76  -0.786785    16.0000
-     9          oO       2   POPS   O13B     77  -0.786785    16.0000
-    10          cA       2   POPS    C11     61   0.078419    12.0100
-    11          hE       2   POPS   H11A     62   0.071001     1.0080
-    12          hE       2   POPS   H11B     63   0.071001     1.0080
-    13          pA       2   POPS      P     59   1.074499    30.9700
-    14          oP       2   POPS    O13     71  -0.799664    16.0000
-    15          oP       2   POPS    O14     72  -0.799664    16.0000
-    16          oT       2   POPS    O12     60  -0.405719    16.0000
-    17          oT       2   POPS    O11     58  -0.405719    16.0000
-    18          cA       2   POPS     C1     55  -0.011815    12.0100
-    19          hE       2   POPS     HA     56   0.101071     1.0080
-    20          hE       2   POPS     HB     57   0.101071     1.0080
-    21          cA       2   POPS     C2     53   0.127883    12.0100
-    22          hE       2   POPS     HS     54   0.115721     1.0080
-    23          oS       2   POPS    O21     73  -0.405212    16.0000
-    24          cC       2   POPS    C21     74   0.798822    12.0100
-    25          oC       2   POPS    O22     75  -0.628471    16.0000
+     1          nA       2   POPS      N     66  -0.270787    14.0100
+     2          hN       2   POPS    HN1     67   0.254166     1.0080
+     3          hN       2   POPS    HN2     68   0.254166     1.0080
+     4          hN       2   POPS    HN3     69   0.254166     1.0080
+     5          cA       2   POPS    C12     64  -0.051563    12.0100
+     6          hX       2   POPS   H12A     65   0.077814     1.0080
+     7          cC       2   POPS    C13     70   0.610507    12.0100
+     8          oO       2   POPS   O13A     76  -0.590086    16.0000
+     9          oO       2   POPS   O13B     77  -0.590086    16.0000
+    10          cA       2   POPS    C11     61   0.058814    12.0100
+    11          hE       2   POPS   H11A     62   0.053251     1.0080
+    12          hE       2   POPS   H11B     63   0.053251     1.0080
+    13          pA       2   POPS      P     59   0.805870    30.9700
+    14          oP       2   POPS    O13     71  -0.599748    16.0000
+    15          oP       2   POPS    O14     72  -0.599748    16.0000
+    16          oT       2   POPS    O12     60  -0.304289    16.0000
+    17          oT       2   POPS    O11     58  -0.304289    16.0000
+    18          cA       2   POPS     C1     55  -0.008861    12.0100
+    19          hE       2   POPS     HA     56   0.075803     1.0080
+    20          hE       2   POPS     HB     57   0.075803     1.0080
+    21          cA       2   POPS     C2     53   0.095912    12.0100
+    22          hE       2   POPS     HS     54   0.086791     1.0080
+    23          oS       2   POPS    O21     73  -0.303909    16.0000
+    24          cC       2   POPS    C21     74   0.599117    12.0100
+    25          oC       2   POPS    O22     75  -0.471353    16.0000
     26          cD       3   POPS    C22     78  -0.143418    12.0100
     27          hL       3   POPS    H2R     79   0.042860     1.0080
     28          hL       3   POPS    H2S     80   0.042860     1.0080
-    29          cA       2   POPS     C3     50   0.018668    12.0100
-    30          hE       2   POPS     HX     51   0.114071     1.0080
-    31          hE       2   POPS     HY     52   0.114071     1.0080
-    32          oS       2   POPS    O31     49  -0.424882    16.0000
-    33          cC       2   POPS    C31     47   0.786666    12.0100
-    34          oC       2   POPS    O32     48  -0.622870    16.0000
+    29          cA       2   POPS     C3     50   0.014001    12.0100
+    30          hE       2   POPS     HX     51   0.085553     1.0080
+    31          hE       2   POPS     HY     52   0.085553     1.0080
+    32          oS       2   POPS    O31     49  -0.318661    16.0000
+    33          cC       2   POPS    C31     47   0.590000    12.0100
+    34          oC       2   POPS    O32     48  -0.467153    16.0000
     35          cD       1   POPS    C32     44  -0.149259    12.0100
     36          hL       1   POPS    H2X     45   0.047345     1.0080
     37          hL       1   POPS    H2Y     46   0.047345     1.0080
